@@ -5,7 +5,7 @@ from typing import Optional
 
 def setup() -> None:
     logging.basicConfig(
-        format="%(asctime)s %(levelname)s: %(message)s", level=logging.DEBUG
+        format="%(asctime)s %(levelname)s: %(message)s", level=logging.INFO
     )
 
 
