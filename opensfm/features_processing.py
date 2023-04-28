@@ -18,7 +18,7 @@ logger: logging.Logger = logging.getLogger(__name__)
 def run_features_processing(data: DataSetBase, images: List[str], force: bool) -> None:
     """Main entry point for running features extraction on a list of images."""
     default_queue_size = 10
-    max_queue_size = 200
+    max_queue_size = 10000
 
     mem_available = log.memory_available()
     processes = data.config["processes"]
